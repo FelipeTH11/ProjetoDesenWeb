@@ -3,6 +3,50 @@
     padding: 0;
 }
 
+.imagem {
+    width: 120px;
+    height: 50px;
+}
+
+nav {
+    background-color:rgb(3, 3, 43);
+    color: #fff;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.menu {
+    list-style: none;
+    float: left;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.menu li {
+    position: relative;
+    /*float: left;*/
+    /*border-right: 1px solid #c0c0c0;*/
+    margin-right: 70px;
+}
+
+.menu li a {
+    color: #fff;
+    text-decoration: none;
+    color: #fff;
+}
+
+.menu li ul {
+    position: absolute;
+    top: 25px;
+    left: 0;
+    background-color: #fff;
+    display: none;
+}
+
 tbody {
     height: 60vh;
     width: 0;
