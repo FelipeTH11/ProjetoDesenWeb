@@ -1,0 +1,140 @@
+header{
+    background-color:rgb(3, 3, 43);
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    margin-bottom: 1px; 
+}
+
+h1, h2, h3{
+    color: goldenrod;
+    text-align: center;
+}
+
+#destaques{
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    margin-bottom: 1px;
+}
+
+.imagem {
+    width: 120px;
+    height: 50px;
+}
+
+nav {
+    background-color:rgb(3, 3, 43);
+    color: #fff;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.menu {
+    list-style: none;
+    float: left;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.menu li {
+    position: relative;
+    /*float: left;*/
+    /*border-right: 1px solid #c0c0c0;*/
+    margin-right: 70px;
+}
+
+.menu li a {
+    color: #fff;
+    text-decoration: none;
+    color: #fff;
+}
+
+.menu li ul {
+    position: absolute;
+    top: 25px;
+    left: 0;
+    background-color: #fff;
+    display: none;
+}
+
+.carros{
+    display: flex;
+    justify-content: space-between;
+}
+
+.carro{
+    width: 25%;
+    padding: 10px;
+}
+
+.carro img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+.slider {
+    display: block;
+    height: 200px;
+    width: 400px;
+    margin: auto;
+    margin-top: 20px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.slider li {
+    list-style: none;
+    position: absolute;
+}
+
+.slider img {
+    margin: auto;
+    height: 200px;
+    width: 400px;
+    vertical-align: top;
+}
+
+.slider input {
+    display: none;
+}
+
+.slider label {
+    background-color: #000;
+    bottom: 10px;
+    cursor: pointer;
+    display: block;
+    height: 10px;
+    position: absolute;
+    width: 10px;
+    z-index: 10;
+}
+
+.slider li:nth-child(1) label {
+    left: 10px;
+}
+
+.slider li:nth-child(2) label {
+    left: 40px;
+}
+
+.slider li:nth-child(3) label {
+    left: 70px;
+}
+
+.slider img {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.slider li input:checked ~ img{
+    opacity: 1;
+    visibility: visible;
+    z-index: 10;
+}
