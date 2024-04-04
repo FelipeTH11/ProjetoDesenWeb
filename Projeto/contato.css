@@ -1,0 +1,153 @@
+@charset "UTF-8";
+
+
+*{
+    font: 1em sans-serif;
+    color: black;
+    margin: 0;
+}
+
+body{
+    background-color: rgb(3, 3, 43);
+}
+
+header{
+    display: block;
+    background-color: goldenrod;
+    padding: 20px;
+    box-shadow: 1px 2px 5px rgb(34, 34, 100);
+}
+
+.listaFiliais{
+    background-color: goldenrod;
+    margin: 0 auto;
+    width: 800px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.listaFiliais ul {
+    background-color: rgba(255, 255, 255, 0.61);
+    margin: 0 auto 20px;
+    width: 600px;
+    border-radius: 1em;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+ul hr{
+    width: 580px;
+    border-color: rgba(0, 0, 0, 0.842);
+}
+
+address {
+    margin: 10px 0px;
+}
+
+address p, address a{
+    color: black;
+}
+
+.link a{
+    margin: 165px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: larger;
+    color: rgb(3, 3, 43);
+    text-shadow: 1px 1px 20px rgba(255, 255, 255, 0.438);
+}
+
+form {
+    margin: 0 auto;
+    width: 600px;
+    padding: 1em;
+    border: 1px solid #ccc;
+    border-radius: 1em;
+    background-color: white;
+    box-shadow: 10px 10px 55px rgba(129, 78, 0, 0.815);
+}
+
+form p{
+    font-size: 1.5em;
+    text-align: center;
+    margin-bottom: 10px;
+}
+hr{
+    margin-bottom: 20px;
+}
+
+form div + div {
+    margin-top: 1em;
+}
+
+#nomeEmail{
+    display: flex;
+}
+
+label#nomeLabel, label#emailLabel, label#assuntoLabel{
+    width: moz-fit-content;
+    padding-right: 4px;
+}
+
+input#nome{
+    margin: 0 5px 0 12px;
+}
+
+input#nome, input#email{ 
+    width: 50%;
+}
+
+
+label {
+    display: inline-block;
+    width: 90px;
+    text-align: left;
+    position: relative;
+    top: 2px;
+}
+
+div#assuntoDiv{
+    display: flex;
+}
+
+label#msg{
+    display: block;
+    padding-bottom: 2px;
+}
+
+label#emailLabel {
+    position: relative;
+    top:2px;
+    left: 15px
+}
+
+input, textarea {
+    font: 1em sans-serif;
+    width: 100%;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 1px solid #999;
+}
+
+textarea{
+    min-height: 1.5em;
+}
+
+input:focus, textarea:focus {
+    border-color: #000;
+}
+
+textarea {
+    vertical-align: top;
+    height: 5em;
+    resize: vertical;
+}
+
+.button {
+    display: flex;
+    justify-content: flex-end;
+}
+
+::placeholder{
+    font-size: 0.8em;
+}
