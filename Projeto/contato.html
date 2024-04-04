@@ -8,11 +8,15 @@
 </head>
 <body>
     <header>
-        <div class="link">
-            <a href="index.html">Sobre</a>
-            <a href="contato.html">Contato</a>
-            <a href="produto.html">Produtos</a>
-        </div>
+        <nav>
+            <img class="imagem" src="logo.png" alt="logo empresa">
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sobre.html">Sobre nós</a></li>
+                <li><a href="contato.html">Cadastro</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+            </ul>
+        </nav>
     </header>
     <div class="listaFiliais">
         <ul>
@@ -60,9 +64,31 @@
                 <textarea id="msg" name="msg" placeholder="Digite uma mensagem"></textarea>
             </div>
             <div class="button">
-                <button type="submit">Enviar</button>
+                <button type="submit" id="enviar">Enviar</button>
             </div>
         </form>
     </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            function validaFormulario() {
+                if (document.getElementById("nome").value == "" || 
+                    document.getElementById("email").value == "" || 
+                    document.getElementById("assunto").value == "" || 
+                    document.getElementById("msg").value == "") {
+                        return false;
+                } else {
+                    return true;
+                }
+            }
+
+            document.getElementById("enviar").addEventListener("click", function() {
+                if (validaFormulario()) {
+                    alert("Formulário válido. Enviando...");
+                } else {
+                    alert("Por favor, preencha todos os campos do formulário!");
+                }
+            });
+        });
+    </script>
 </body>
 </html>
